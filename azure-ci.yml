@@ -15,10 +15,16 @@ variables:
 #   displayName: Run Tests
 #   jobs:
 #     - job:
-steps: 
-- task: CmdLine@2
-  inputs:
-    script: 'echo your tests are passed'
+# steps: 
+# - task: CmdLine@2
+#   inputs:
+#     script: 'echo your tests are passed'
+# stages:
+  # - stage:
+steps:
+  - task: CmdLine@2
+    inputs:
+      script: 'echo test ran'
 
 # - stage: Build
 #   displayName: Build image

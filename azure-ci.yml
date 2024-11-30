@@ -10,15 +10,15 @@ resources:
 variables:
   tag: '$(Build.BuildId)'
 
-stages:
-- stage: Test
-  displayName: Run Tests
-  jobs:
-    - job:
-      steps: 
-      - task: CmdLine@2
-        inputs:
-          script: 'echo your tests are passed'
+# stages:
+# - stage: Test
+#   displayName: Run Tests
+#   jobs:
+#     - job:
+steps: 
+- task: CmdLine@2
+  inputs:
+    script: 'echo your tests are passed'
 
 # - stage: Build
 #   displayName: Build image
